@@ -1,6 +1,5 @@
 <?php $this->layout('layout', ['title' => 'Register']);
 
-$use = new \App\views\services\RegisterService();
 ?>
 <div class="page-wrapper auth">
     <div class="page-inner bg-brand-gradient">
