@@ -6,6 +6,7 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
+    'Tamtamchik\\SimpleFlash\\' => array($vendorDir . '/tamtamchik/simple-flash/src'),
     'League\\Plates\\' => array($vendorDir . '/league/plates/src'),
     'FastRoute\\' => array($vendorDir . '/nikic/fast-route/src'),
     'Delight\\Http\\' => array($vendorDir . '/delight-im/http/src'),

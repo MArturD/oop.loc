@@ -39,7 +39,14 @@
                         <div class="col-xl-6 ml-auto mr-auto">
                             <div class="card p-4 rounded-plus bg-faded">
                                 <div class="alert alert-danger text-dark" role="alert">
-                                    <strong>Уведомление!</strong> Этот эл. адрес уже занят другим пользователем.
+                                    <strong>Уведомление!</strong>
+                                    <?php
+                                    use function Tamtamchik\SimpleFlash\flash;
+
+
+echo flash()->display('error');
+                                    ?>
+                                    Этот эл. адрес уже занят другим пользователем.
                                 </div>
                                 <form id="js-login" novalidate="" action="/user_register" method="post">
                                     <div class="form-group">

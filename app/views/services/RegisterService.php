@@ -3,6 +3,7 @@
 namespace App\views\services;
 
 use PDO;
+use function Tamtamchik\SimpleFlash\flash;
 
 class RegisterService
 {
@@ -20,7 +21,7 @@ class RegisterService
             $userId = $this->auth->register($email, $password,'', function ($selector , $token ) {
             });
         } catch (\Delight\Auth\InvalidEmailException $e) {
-            die('Invalid email address');
+            flash()->error(['Проверка']);
         } catch (\Delight\Auth\InvalidPasswordException $e) {
             die('Invalid password');
         } catch (\Delight\Auth\UserAlreadyExistsException $e) {

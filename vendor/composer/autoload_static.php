@@ -8,9 +8,14 @@ class ComposerStaticInit7cdea021f3e459c9a8a46033c1e20856
 {
     public static $files = array (
         '253c157292f75eb38082b5acb06f3f01' => __DIR__ . '/..' . '/nikic/fast-route/src/functions.php',
+        '6157b075b923803e5ef157aeb43b83bd' => __DIR__ . '/..' . '/tamtamchik/simple-flash/src/function.php',
     );
 
     public static $prefixLengthsPsr4 = array (
+        'T' => 
+        array (
+            'Tamtamchik\\SimpleFlash\\' => 23,
+        ),
         'L' => 
         array (
             'League\\Plates\\' => 14,
@@ -35,6 +40,10 @@ class ComposerStaticInit7cdea021f3e459c9a8a46033c1e20856
     );
 
     public static $prefixDirsPsr4 = array (
+        'Tamtamchik\\SimpleFlash\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/tamtamchik/simple-flash/src',
+        ),
         'League\\Plates\\' => 
         array (
             0 => __DIR__ . '/..' . '/league/plates/src',
